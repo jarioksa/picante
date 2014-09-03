@@ -42,10 +42,6 @@ function(samp,phylo,metric=c("cij","checkerboard","jaccard","doij"),
 					quant=0.75, runs=999, show.plot=FALSE, ...)
 {
 
-    if (!require(quantreg)) {
-        stop("The 'quantreg' package is required to use this function.")
-    }
-
 	metric <- match.arg(metric)
 	null.model <- match.arg(null.model)
 	results <- list("obs.qr.intercept"=NA,"obs.qr.slope"=NA,"obs.qr.slope.p"=NA,"obs.rank"=NA,"runs"=runs,

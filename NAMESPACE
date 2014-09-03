@@ -9,3 +9,7 @@ import(
   vegan,
   nlme
 )
+
+# need to import functions called in functions
+importFrom(quantreg, rq)
+importFrom(brglm, brglm)
